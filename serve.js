@@ -39,5 +39,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`Beidê Jeans server running at http://localhost:${PORT}`);
+  console.log(`Perfumaria Paris server running at http://localhost:${PORT}`);
 });

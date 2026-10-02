@@ -472,8 +472,8 @@ body.figma-body {
   justify-content: center;
   align-items: center;
   gap: 12px;
-  overflow-x: auto;
-  flex-wrap: nowrap;
+  overflow: visible;
+  flex-wrap: wrap;
   scrollbar-width: none;
   position: relative;
   z-index: 3;
@@ -572,8 +572,8 @@ body.figma-body {
   justify-content: center;
   align-items: flex-start;
   gap: 15px;
-  overflow-x: auto;
-  flex-wrap: nowrap;
+  overflow: visible;
+  flex-wrap: wrap;
   scrollbar-width: none;
 }
 .products-grid-container::-webkit-scrollbar {

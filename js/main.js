@@ -2,7 +2,6 @@
    Main Controller & Interactions - Brunelli Joias
    ========================================================================== */
 
-(function() {
 
   // ==========================================================================
   // 1. Live Countdown Timer (00 Dia : 05 Hora : 52 Min : 59 Seg)
@@ -124,7 +123,6 @@
   document.addEventListener('DOMContentLoaded', () => {
     initCountdown();
   });
-})();
 
 function initScrollIndicators() {
   const containers = document.querySelectorAll('.products-grid-container');
@@ -211,3 +209,75 @@ function initHeroSlider() {
   });
 }
 document.addEventListener('DOMContentLoaded', initHeroSlider);
+
+
+// Scroll dots functionality
+document.addEventListener('DOMContentLoaded', () => {
+    const scrollContainers = document.querySelectorAll('.scroll-container');
+    
+    scrollContainers.forEach(container => {
+        const dotsContainer = container.nextElementSibling;
+        if (!dotsContainer || !dotsContainer.classList.contains('scroll-dots')) return;
+        
+        const items = container.children;
+        const numItems = items.length;
+        
+        // Create dots
+        dotsContainer.innerHTML = '';
+        for (let i = 0; i < numItems; i++) {
+            const dot = document.createElement('span');
+            dot.classList.add('dot');
+            if (i === 0) dot.classList.add('active');
+            dot.addEventListener('click', () => {
+                items[i].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+            });
+            dotsContainer.appendChild(dot);
+        }
+        
+        const dots = dotsContainer.querySelectorAll('.dot');
+        
+        // Update dots on scroll
+        container.addEventListener('scroll', () => {
+            let index = Math.round(container.scrollLeft / items[0].offsetWidth);
+            if (index >= numItems) index = numItems - 1;
+            
+            dots.forEach(d => d.classList.remove('active'));
+            if(dots[index]) dots[index].classList.add('active');
+        });
+        
+        // Drag to scroll for PC
+        let isDown = false;
+        let startX;
+        let scrollLeft;
+        
+        container.addEventListener('mousedown', (e) => {
+            isDown = true;
+            container.style.scrollBehavior = 'auto'; // Disable smooth scroll while dragging
+            container.style.scrollSnapType = 'none'; // Disable snapping while dragging
+            startX = e.pageX - container.offsetLeft;
+            scrollLeft = container.scrollLeft;
+        });
+        container.addEventListener('mouseleave', () => {
+            isDown = false;
+            container.style.scrollBehavior = 'smooth';
+            container.style.scrollSnapType = 'x mandatory';
+        });
+        container.addEventListener('mouseup', () => {
+            isDown = false;
+            container.style.scrollBehavior = 'smooth';
+            container.style.scrollSnapType = 'x mandatory';
+            // Snap to nearest
+            const index = Math.round(container.scrollLeft / items[0].offsetWidth);
+            if (items[index]) {
+                items[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+            }
+        });
+        container.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - container.offsetLeft;
+            const walk = (x - startX) * 2; // scroll-fast
+            container.scrollLeft = scrollLeft - walk;
+        });
+    });
+});

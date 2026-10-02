@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Brunelli Joias em Prata 925</title>
-  <meta name="description" content="Jóias exclusivas em Prata Legítima 925 com garantia vitalícia.">
-  <meta property="og:title" content="Brunelli Joias em Prata 925">
-  <meta property="og:description" content="Jóias exclusivas em Prata Legítima 925 selecionadas por Melissa Brunelli.">
-  <meta property="og:image" content="https://brunellijoias.vercel.app/assets/og_image.jpg">
+  <title>Perfumaria Paris | Cosméticos e Beleza</title>
+  <meta name="description" content="Os melhores produtos de beleza e cosméticos com atendimento exclusivo em São Gonçalo.">
+  <meta property="og:title" content="Perfumaria Paris | Cosméticos e Beleza">
+  <meta property="og:description" content="Os melhores produtos de beleza e cosméticos com atendimento exclusivo em São Gonçalo.">
+  <meta property="og:image" content="https://perfumariaparis.vercel.app/assets/og_image.jpg">
   <meta property="og:image:width" content="1400">
   <meta property="og:image:height" content="788">
-  <meta property="og:url" content="https://brunellijoias.vercel.app/">
+  <meta property="og:url" content="https://perfumariaparis.vercel.app/">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="https://brunellijoias.vercel.app/assets/og_image.jpg">
+  <meta name="twitter:image" content="https://perfumariaparis.vercel.app/assets/og_image.jpg">
   <link rel="icon" type="image/png" href="assets/favicon.png">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
@@ -22,6 +22,63 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400&family=Inter:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+
+<style>
+.shop-by-size-section {
+    background: url('assets/category_bg.jpg') no-repeat center center / cover !important;
+}
+.category-bg-banner {
+    display: none !important; /* Hide original banner if any */
+}
+</style>
+
+<style>
+/* Reset product grids to scroll horizontally on all devices, as requested by user */
+.scroll-container {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    overflow-x: auto !important;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 16px;
+    padding-bottom: 10px;
+}
+.scroll-container::-webkit-scrollbar {
+    display: none;
+}
+.scroll-container > * {
+    scroll-snap-align: start;
+    flex: 0 0 auto;
+}
+
+/* Ensure product cards have a specific width so they don't stretch or shrink too much */
+.products-grid-container .product-card-col {
+    width: 260px !important;
+}
+
+.scroll-dots {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 10px;
+}
+.scroll-dots .dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ccc;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+.scroll-dots .dot.active {
+    background: var(--color-black);
+}
+</style>
 </head>
 <body class="figma-body">
 
@@ -32,9 +89,9 @@
     <!-- Top Announcement Bar -->
     <div class="top-announcement-bar">
       <span>
-        💎 <strong>PRATA LEGÍTIMA 925 COM CERTIFICADO &amp; GARANTIA VITALÍCIA</strong> &nbsp;|&nbsp; 
-        📍 <strong>BOX 111 FEIRINHA DO ELDORADO - CONTAGEM/MG</strong> &nbsp;|&nbsp; 
-        📱 <span class="gold-text">WHATSAPP: (31) 98702-9034</span>
+        💎 <strong>Beleza e Cosméticos COM CERTIFICADO &amp; GARANTIA VITALÍCIA</strong> &nbsp;|&nbsp; 
+        📍 <strong>R. Nair Andrade, 56 - Lj 04 - Alcantara, São Gonçalo - RJ</strong> &nbsp;|&nbsp; 
+        📱 <span class="gold-text">WHATSAPP: (85) 99202-9639</span>
       </span>
     </div>
 
@@ -52,8 +109,8 @@
         </button>
 
         <!-- Brand Official Logo (Foto 1) -->
-        <a href="#" class="brand-logo" aria-label="Brunelli Joias em Prata Home">
-          <img src="assets/logo_brunelli_pratas.png" alt="Brunelli Joias em Prata" class="brand-logo-img">
+        <a href="#" class="brand-logo" aria-label="Perfumaria Paris Home">
+          <img src="assets/logo_perfumaria.png" alt="Perfumaria Paris" class="brand-logo-img">
         </a>
 
 
@@ -63,7 +120,7 @@
           <!-- Google 5.0 Badge -->
           <a href="#avaliacoes" class="google-badge-header" title="Ver avaliações 5 estrelas no Google">
             <span class="google-stars">★★★★★</span>
-            <span><strong>5,0</strong> (65 avaliações)</span>
+            <span><strong>5,0</strong></span>
           </a>
 
           <!-- Botão de Busca Apenas Ícone -->
@@ -75,11 +132,11 @@
           </a>
 
           <!-- WhatsApp Concierge Link -->
-          <a href="https://wa.me/5531987029034?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Brunelli%20Joias%20em%20Prata%20925" class="action-item-link" title="Atendimento WhatsApp: (31) 98702-9034">
+          <a href="https://wa.me/5585992029639?text=Ol%C3%A1!%20Vim%20pelo%20site%20da%20Brunelli%20Joias%20em%20Prata%20925" class="action-item-link" title="Atendimento WhatsApp: (85) 99202-9639">
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"></path>
             </svg>
-            <span>(31) 98702-9034</span>
+            <span>(85) 99202-9639</span>
           </a>
 
           <!-- Cart Drawer Trigger Button -->
@@ -97,17 +154,14 @@
     </div>
 
     <!-- Categories Subnav: As 9 Categorias Solicitadas -->
-    <nav class="categories-nav-bar" aria-label="Categorias de Joias em Prata">
+    <nav class="categories-nav-bar" aria-label="Categorias de produtos de beleza">
       <ul class="categories-menu-list">
-        <li class="category-menu-item"><a href="#masculino" onclick="window.filterByCategory('MASCULINO')">MASCULINO</a></li>
-        <li class="category-menu-item"><a href="#pulseira-feminina" onclick="window.filterByCategory('PULSEIRA FEMININA')">PULSEIRA FEMININA</a></li>
-        <li class="category-menu-item"><a href="#categorias" onclick="window.filterByCategory('PIERCINGS')">PIERCINGS</a></li>
-        <li class="category-menu-item"><a href="#categorias" onclick="window.filterByCategory('ANÉIS')">ANÉIS</a></li>
-        <li class="category-menu-item"><a href="#categorias" onclick="window.filterByCategory('PULSEIRA BERLOQUE/CHARMS')">PULSEIRA BERLOQUE/CHARMS</a></li>
-        <li class="category-menu-item"><a href="#categorias" onclick="window.filterByCategory('BRINCO ARGOLAS')">BRINCO ARGOLAS</a></li>
-        <li class="category-menu-item"><a href="#categorias" onclick="window.filterByCategory('BRINCOS TARRACHAS')">BRINCOS TARRACHAS</a></li>
-        <li class="category-menu-item"><a href="#categorias" onclick="window.filterByCategory('CONJUNTO')">CONJUNTO</a></li>
-        <li class="category-menu-item"><a href="#categorias" onclick="window.filterByCategory('RIVIERAS')">RIVIERAS</a></li>
+        <li class="category-menu-item"><a href="#produtos" onclick="window.filterByCategory('ACESSÓRIOS')">ACESSÓRIOS</a></li>
+        <li class="category-menu-item"><a href="#produtos" onclick="window.filterByCategory('MAQUIAGEM')">MAQUIAGEM</a></li>
+        <li class="category-menu-item"><a href="#produtos" onclick="window.filterByCategory('UNHAS')">UNHAS</a></li>
+        <li class="category-menu-item"><a href="#produtos" onclick="window.filterByCategory('CABELOS')">CABELOS</a></li>
+        <li class="category-menu-item"><a href="#produtos" onclick="window.filterByCategory('PERFUMES')">PERFUMES</a></li>
+        <li class="category-menu-item"><a href="#produtos" onclick="window.filterByCategory('TRATAMENTOS')">TRATAMENTOS</a></li>
       </ul>
     </nav>
   </header>
@@ -115,23 +169,26 @@
   <!-- ==========================================================================
        Hero Section
        ========================================================================== -->
-  <section class="hero-carousel-section" id="hero-slider" aria-label="Destaques Brunelli Joias">
+  <section class="hero-carousel-section" id="hero-slider" aria-label="Destaques Perfumaria Paris">
     <div class="carousel-track" id="hero-track">
-      <div class="carousel-slide"><img src="assets/hero_bg_2.png" alt="Peça Brunelli 1"></div>
-      <div class="carousel-slide"><img src="assets/hero_bg_3.png" alt="Peça Brunelli 2"></div>
-      <div class="carousel-slide"><img src="assets/hero_bg_4.jpg" alt="Peça Brunelli 3"></div>
+      <div class="carousel-slide"><img src="assets/hero_bg_1.jpg" alt="Peça Brunelli 1"></div>
+      <div class="carousel-slide"><img src="assets/hero_bg_2.jpg" alt="Peça Brunelli 2"></div>
+      <div class="carousel-slide"><img src="assets/hero_bg_3.jpg" alt="Peça Brunelli 3"></div>
     </div>
     
     <div class="carousel-overlay-content">
       <div class="hero-text-box">
-        <span class="hero-sub-tag">JÓIAS EM PRATA LEGÍTIMA 925 • CONTAGEM / MG</span>
-        <h1 class="hero-main-title">Apaixonada por Prata como você.</h1>
+        <span class="hero-sub-tag">COSMÉTICOS E PERFUMARIA • SÃO GONÇALO / RJ</span>
+        <h1 class="hero-main-title">Realce sua beleza com a Perfumaria Paris.</h1>
         <p class="hero-description-text">
-          Peças exclusivas com garantia vitalícia da autenticidade da Prata 925 selecionadas por <strong>@mrlissabrunelli</strong>.<br>
-          Visite nosso <strong>Box 111 na Feirinha do Paraguai Eldorado</strong> ou peça pelo WhatsApp com entrega segura!
+          Os melhores produtos de beleza e cosméticos com atendimento exclusivo por <strong>@perfumariaparis_oficial</strong>.<br>
+          Visite nossa loja em Alcântara, São Gonçalo ou peça pelo WhatsApp com entrega rápida e segura!
+        </p>
+
+      
       </div>
     </div>
-
+    
     <div class="carousel-dots" id="hero-dots">
       <span class="dot active"></span>
       <span class="dot"></span>
@@ -140,1233 +197,491 @@
   </section>
 
   <!-- ==========================================================================
-       Section: Compre por Categoria (As 9 Categorias Solicitadas)
+       Section: Categorias
        ========================================================================== -->
-  <section class="shop-by-size-section" id="categorias" aria-label="Categorias em Prata 925">
+  <section class="shop-by-size-section" id="categorias" aria-label="Categorias em Beleza e Cosméticos">
     <div class="category-bg-banner"></div>
     <div class="shop-by-size-container" style="position: relative; z-index: 2;">
-      <h3 class="size-heading-title">Compre por Categoria</h3>
-      <p style="font-family: var(--font-poppins); font-size: 13px; color: rgba(255,255,255,0.6); margin-top: 4px; text-align: center; position: relative; z-index: 3;">
-        Selecione a categoria para descobrir peças em Prata 925 legítima
+      <h3 class="size-heading-title" style="color: var(--color-black);">Categorias</h3>
+      <p style="font-family: var(--font-poppins); font-size: 13px; color: #333; margin-top: 4px; text-align: center; position: relative; z-index: 3;">
+        Selecione a categoria para descobrir os melhores produtos
       </p>
 
       <!-- 9 Botões Circulares das Categorias -->
-      <div class="size-circles-row">
-        <button class="category-circle-item selected" data-cat="MASCULINO" onclick="window.filterByCategory('MASCULINO')" aria-label="Categoria Masculino">
-          <span class="category-circle-icon">⛓️</span>
-          <span class="category-circle-title">MASCULINO</span>
+      <div class="size-circles-row scroll-container">
+        <button class="category-circle-item" data-cat="ACESSÓRIOS" onclick="window.filterByCategory('ACESSÓRIOS')">
+          <span class="category-circle-icon">🎀</span>
+          <span class="category-circle-title">ACESSÓRIOS</span>
         </button>
-
-        <button class="category-circle-item" data-cat="PULSEIRA FEMININA" onclick="window.filterByCategory('PULSEIRA FEMININA')" aria-label="Categoria Pulseira Feminina">
-          <span class="category-circle-icon">💎</span>
-          <span class="category-circle-title">PULSEIRA FEM.</span>
+        <button class="category-circle-item" data-cat="MAQUIAGEM" onclick="window.filterByCategory('MAQUIAGEM')">
+          <span class="category-circle-icon">💄</span>
+          <span class="category-circle-title">MAQUIAGEM</span>
         </button>
-
-        <button class="category-circle-item" data-cat="PIERCINGS" onclick="window.filterByCategory('PIERCINGS')" aria-label="Categoria Piercings">
+        <button class="category-circle-item" data-cat="UNHAS" onclick="window.filterByCategory('UNHAS')">
+          <span class="category-circle-icon">💅</span>
+          <span class="category-circle-title">UNHAS</span>
+        </button>
+        <button class="category-circle-item selected" data-cat="CABELOS" onclick="window.filterByCategory('CABELOS')">
+          <span class="category-circle-icon">🧴</span>
+          <span class="category-circle-title">CABELOS</span>
+        </button>
+        <button class="category-circle-item" data-cat="PERFUMES" onclick="window.filterByCategory('PERFUMES')">
           <span class="category-circle-icon">✨</span>
-          <span class="category-circle-title">PIERCINGS</span>
+          <span class="category-circle-title">PERFUMES</span>
         </button>
-
-        <button class="category-circle-item" data-cat="ANÉIS" onclick="window.filterByCategory('ANÉIS')" aria-label="Categoria Anéis">
-          <span class="category-circle-icon">💍</span>
-          <span class="category-circle-title">ANÉIS</span>
-        </button>
-
-        <button class="category-circle-item" data-cat="PULSEIRA BERLOQUE/CHARMS" onclick="window.filterByCategory('PULSEIRA BERLOQUE/CHARMS')" aria-label="Categoria Berloques e Charms">
-          <span class="category-circle-icon">📿</span>
-          <span class="category-circle-title">BERLOQUES</span>
-        </button>
-
-        <button class="category-circle-item" data-cat="BRINCO ARGOLAS" onclick="window.filterByCategory('BRINCO ARGOLAS')" aria-label="Categoria Brinco Argolas">
-          <span class="category-circle-icon">⭕</span>
-          <span class="category-circle-title">ARGOLAS</span>
-        </button>
-
-        <button class="category-circle-item" data-cat="BRINCOS TARRACHAS" onclick="window.filterByCategory('BRINCOS TARRACHAS')" aria-label="Categoria Brincos Tarrachas">
-          <span class="category-circle-icon">💠</span>
-          <span class="category-circle-title">TARRACHAS</span>
-        </button>
-
-        <button class="category-circle-item" data-cat="CONJUNTO" onclick="window.filterByCategory('CONJUNTO')" aria-label="Categoria Conjunto">
-          <span class="category-circle-icon">🎁</span>
-          <span class="category-circle-title">CONJUNTOS</span>
-        </button>
-
-        <button class="category-circle-item" data-cat="COLARES" onclick="window.filterByCategory('COLARES')" aria-label="Categoria Colares">
-          <span class="category-circle-icon">✨</span>
-          <span class="category-circle-title">COLARES</span>
+        <button class="category-circle-item" data-cat="TRATAMENTOS" onclick="window.filterByCategory('TRATAMENTOS')">
+          <span class="category-circle-icon">💆‍♀️</span>
+          <span class="category-circle-title">TRATAMENTOS</span>
         </button>
       </div>
+      <div class="scroll-dots"></div>
     </div>
   </section>
 
+  
+  
   <!-- ==========================================================================
-       Section: COLARES (Destaques)
+       Section: CABELOS
        ========================================================================== -->
-  <section class="promotions-today-section" id="colares" aria-label="Colares em Prata 925" style="background: #F8FAFC;">
+  <section class="promotions-today-section" id="cabelos" aria-label="Produtos CABELOS" style="background: #F8FAFC;">
     <div class="promotions-today-container">
-      <h2 class="section-title-h2">COLARES DE DESTAQUE</h2>
+      <h2 class="section-title-h2">CABELOS</h2>
       <p style="text-align: center; font-family: var(--font-poppins); font-size: 13px; color: #64748B; margin: -16px 0 24px;">
-        As peças mais desejadas para brilhar no seu pescoço
+        Os melhores produtos da categoria CABELOS
       </p>
-
-      <div class="products-grid-container">
-        
-        <!-- NOVO PRODUTO: Riviera Inspiração Swarovski -->
+      <div class="products-grid-container scroll-container">
+        <!-- PRODUTO 1 -->
         <article class="product-card-col">
           <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • PREMIUM</span>
-            <img src="assets/prod_colar_riviera.jpg" alt="Riviera Inspiração Swarovski" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">COLAR RIVIERA</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">INSPIRAÇÃO SWAROVSKI</span>
+            <span class="product-gold-badge">PROFISSIONAL</span>
+            <img src="assets/produto1.jpg" alt="Creme Alisante Forte Essenza + Loção" loading="lazy">
           </div>
           <div class="product-info-box">
-            <h3 class="product-title-link">Riviera Inspiração Swarovski</h3>
+            <h3 class="product-title-link">Creme Alisante Forte Essenza + Loção</h3>
             <div class="rating-stars-row">
               <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
-            </div>
-            <div class="price-container-box">
-              <div class="price-main-row">
-                <span class="price-current-value">R$ 1.099,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
-              </div>
-              <span class="price-installments-text">ou 10x de R$ 109,99 sem juros</span>
-            </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Riviera Inspiração Swarovski', 1099.90, 'assets/prod_colar_riviera.jpg')">
-              Adicionar à Sacola
-            </button>
-          </div>
-        </article>
-
-        <!-- NOVO PRODUTO: Colar Gota Grande Cristal -->
-        <article class="product-card-col">
-          <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • ZIRCÔNIA</span>
-            <img src="assets/prod_colar_gota_cristal.png" alt="Colar Gota Grande Cristal" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">COLAR GOTA</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">CRISTAL TRANSPARENTE</span>
-          </div>
-          <div class="product-info-box">
-            <h3 class="product-title-link">Colar Gota Grande Cristal</h3>
-            <div class="rating-stars-row">
-              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
-            </div>
-            <div class="price-container-box">
-              <div class="price-main-row">
-                <span class="price-current-value">R$ 229,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
-              </div>
-              <span class="price-installments-text">ou 6x de R$ 38,31 sem juros</span>
-            </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Colar Gota Grande Cristal', 229.90, 'assets/prod_colar_gota_cristal.png')">
-              Adicionar à Sacola
-            </button>
-          </div>
-        </article>
-
-        <!-- NOVO PRODUTO: Colar Borboletas Cravejadas -->
-        <article class="product-card-col">
-          <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • ZIRCÔNIA</span>
-            <img src="assets/prod_colar_borboletas.png" alt="Colar Borboletas Cravejadas" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">COLAR</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">BORBOLETAS CRAVEJADAS</span>
-          </div>
-          <div class="product-info-box">
-            <h3 class="product-title-link">Colar Borboletas Cravejadas</h3>
-            <div class="rating-stars-row">
-              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
-            </div>
-            <div class="price-container-box">
-              <div class="price-main-row">
-                <span class="price-current-value">R$ 199,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
-              </div>
-              <span class="price-installments-text">ou 6x de R$ 33,31 sem juros</span>
-            </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Colar Borboletas Cravejadas', 199.90, 'assets/prod_colar_borboletas.png')">
-              Adicionar à Sacola
-            </button>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       Section: Produtos Reais da Brunelli Joias em Prata 925
-       (Corrente Cartier, Rabo de Rato, Grumet e Pulseira Gotinha Rosa)
-       ========================================================================== -->
-  <section class="promotions-today-section" id="masculino" aria-label="Coleção Masculina e Destaques em Prata 925">
-    <div class="promotions-today-container">
-      <h2 class="section-title-h2">PEÇAS EM PRATA 925 LEGÍTIMA</h2>
-      <p style="text-align: center; font-family: var(--font-poppins); font-size: 13px; color: #64748B; margin: -16px 0 24px;">
-        Garantia Vitalícia da Prata • Fotos Reais dos Produtos • Pronta Entrega
-      </p>
-
-      <div class="products-grid-container">
-        
-        <!-- PRODUTO 1 (Foto 2): Corrente Masculina Cartier -->
-        <article class="product-card-col">
-          <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 LEGÍTIMA</span>
-            <img src="assets/prod_corrente_cartier.png" alt="Corrente Masculina Cartier em Prata 925" loading="lazy">
-          </div>
-
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">MASCULINO</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">PRATA PURA 925</span>
-          </div>
-
-          <div class="product-info-box">
-            <h3 class="product-title-link">Corrente Masculina Cartier</h3>
-            <div class="rating-stars-row">
-              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
-            </div>
-            <div class="price-container-box">
-              <div class="price-main-row">
-                <span class="price-current-value">R$ 159,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
-              </div>
-              <span class="price-installments-text">ou 3x de R$ 53,30 sem juros</span>
-            </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Corrente Masculina Cartier', 159.90, 'assets/prod_corrente_cartier.png')">
-              Adicionar à Sacola
-            </button>
-          </div>
-        </article>
-
-        <!-- PRODUTO 2 (Foto 3): Corrente Masculina Rabo de Rato 50cm -->
-        <article class="product-card-col">
-          <div class="product-image-box">
-            <span class="product-gold-badge">50CM • PRATA 925</span>
-            <img src="assets/prod_corrente_rabo_de_rato.png" alt="Corrente Masculina Rabo de Rato 50cm em Prata 925" loading="lazy">
-          </div>
-
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">MASCULINO</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">RABO DE RATO 50CM</span>
-          </div>
-
-          <div class="product-info-box">
-            <h3 class="product-title-link">Corrente Masculina Rabo de Rato 50cm</h3>
-            <div class="rating-stars-row">
-              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
-            </div>
-            <div class="price-container-box">
-              <div class="price-main-row">
-                <span class="price-current-value">R$ 229,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
-              </div>
-              <span class="price-installments-text">ou 3x de R$ 76,63 sem juros</span>
-            </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Corrente Masculina Rabo de Rato 50cm', 229.90, 'assets/prod_corrente_rabo_de_rato.png')">
-              Adicionar à Sacola
-            </button>
-          </div>
-        </article>
-
-        <!-- PRODUTO 3 (Foto 4): Corrente Masculina Grumet 2,3mm -->
-        <article class="product-card-col">
-          <div class="product-image-box">
-            <span class="product-gold-badge">2,3MM • PRATA 925</span>
-            <img src="assets/prod_corrente_grumet.png" alt="Corrente Masculina Grumet 2,3mm em Prata 925" loading="lazy">
-          </div>
-
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">MASCULINO</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">GRUMET 2,3MM</span>
-          </div>
-
-          <div class="product-info-box">
-            <h3 class="product-title-link">Corrente Masculina Grumet 2,3mm</h3>
-            <div class="rating-stars-row">
-              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
-            </div>
-            <div class="price-container-box">
-              <div class="price-main-row">
-                <span class="price-current-value">R$ 259,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
-              </div>
-              <span class="price-installments-text">ou 3x de R$ 86,63 sem juros</span>
-            </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Corrente Masculina Grumet 2,3mm', 259.90, 'assets/prod_corrente_grumet.png')">
-              Adicionar à Sacola
-            </button>
-          </div>
-        </article>
-
-        <!-- O Produto Pulseira Gotinha Rosa Pink foi movido para a nova seção abaixo -->
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       Section: PULSEIRAS FEMININAS
-       ========================================================================== -->
-  <section class="promotions-today-section" id="pulseira-feminina" aria-label="Pulseiras Femininas em Prata 925" style="background: #F8FAFC;">
-    <div class="promotions-today-container">
-      <h2 class="section-title-h2">PULSEIRAS FEMININAS EM PRATA 925</h2>
-      <p style="text-align: center; font-family: var(--font-poppins); font-size: 13px; color: #64748B; margin: -16px 0 24px;">
-        Delicadeza e brilho eterno para o seu dia a dia
-      </p>
-
-      <div class="products-grid-container">
-        
-        <!-- PRODUTO (Movido): Pulseira Gotinha Rosa Pink -->
-        <article class="product-card-col">
-          <div class="product-image-box">
-            <span class="product-gold-badge">FEMININO • ZIRCÔNIA</span>
-            <img src="assets/prod_pulseira_gotinha_rosa.png" alt="Pulseira Gotinha Rosa Pink em Prata 925" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">PULSEIRA FEMININA</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">GOTA ROSA PINK</span>
-          </div>
-          <div class="product-info-box">
-            <h3 class="product-title-link">Pulseira Gotinha Rosa Pink</h3>
-            <div class="rating-stars-row">
-              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
-            </div>
-            <div class="price-container-box">
-              <div class="price-main-row">
-                <span class="price-current-value">R$ 129,90</span>
-                <span class="price-discount-tag">DESTAQUE</span>
-              </div>
-              <span class="price-installments-text">ou 3x de R$ 43,30 sem juros</span>
-            </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Pulseira Gotinha Rosa Pink', 129.90, 'assets/prod_pulseira_gotinha_rosa.png')">
-              Adicionar à Sacola
-            </button>
-          </div>
-        </article>
-
-        <!-- NOVO PRODUTO 1: Pulseira Trevo Cravejado -->
-        <article class="product-card-col">
-          <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • ZIRCÔNIA</span>
-            <img src="assets/prod_pulseira_trevo.png" alt="Pulseira Trevo Cravejado" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">PULSEIRA FEMININA</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">TREVO CRAVEJADO</span>
-          </div>
-          <div class="product-info-box">
-            <h3 class="product-title-link">Pulseira Trevo Cravejado</h3>
-            <div class="rating-stars-row">
-              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
-            </div>
-            <div class="price-container-box">
-              <div class="price-main-row">
-                <span class="price-current-value">R$ 119,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
-              </div>
-              <span class="price-installments-text">ou 3x de R$ 39,96 sem juros</span>
-            </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Pulseira Trevo Cravejado', 119.90, 'assets/prod_pulseira_trevo.png')">
-              Adicionar à Sacola
-            </button>
-          </div>
-        </article>
-
-        <!-- NOVO PRODUTO 2: Pulseira Coração -->
-        <article class="product-card-col">
-          <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 LEGÍTIMA</span>
-            <img src="assets/prod_pulseira_coracao.png" alt="Pulseira Coração" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">PULSEIRA FEMININA</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">CORAÇÃO</span>
-          </div>
-          <div class="product-info-box">
-            <h3 class="product-title-link">Pulseira Coração</h3>
-            <div class="rating-stars-row">
-              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
+              <span><strong>5,0</strong></span>
             </div>
             <div class="price-container-box">
               <div class="price-main-row">
                 <span class="price-current-value">R$ 69,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
               </div>
-              <span class="price-installments-text">ou 3x de R$ 23,30 sem juros</span>
             </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Pulseira Coração', 69.90, 'assets/prod_pulseira_coracao.png')">
+            <button class="btn-quick-buy" onclick="window.buyProductDirect('Creme Alisante Forte Essenza + Loção', 69.9, 'assets/produto1.jpg')">
               Adicionar à Sacola
             </button>
           </div>
         </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       Section: PIERCINGS
-       ========================================================================== -->
-  <section class="promotions-today-section" id="piercings" aria-label="Piercings em Prata 925">
-    <div class="promotions-today-container">
-      <h2 class="section-title-h2">PIERCINGS EM PRATA 925</h2>
-      <p style="text-align: center; font-family: var(--font-poppins); font-size: 13px; color: #64748B; margin: -16px 0 24px;">
-        Detalhes minimalistas com muito brilho
-      </p>
-
-      <div class="products-grid-container">
-        
-        <!-- NOVO PRODUTO 3: Piercing Ponto Luz Gancho -->
+        <!-- PRODUTO 2 -->
         <article class="product-card-col">
           <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • ZIRCÔNIA</span>
-            <img src="assets/prod_piercing_gancho.png" alt="Piercing Ponto Luz Gancho" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">PIERCING</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">PONTO LUZ GANCHO</span>
+            <span class="product-gold-badge">RECONSTRUÇÃO</span>
+            <img src="assets/produto2.jpg" alt="Fattore Queratina Shampoo e Condicionador" loading="lazy">
           </div>
           <div class="product-info-box">
-            <h3 class="product-title-link">Piercing Ponto Luz Gancho</h3>
+            <h3 class="product-title-link">Fattore Queratina Shampoo e Condicionador</h3>
             <div class="rating-stars-row">
               <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
+              <span><strong>5,0</strong></span>
             </div>
             <div class="price-container-box">
               <div class="price-main-row">
-                <span class="price-current-value">R$ 79,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
+                <span class="price-current-value">R$ 45,90</span>
               </div>
-              <span class="price-installments-text">ou 3x de R$ 26,63 sem juros</span>
             </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Piercing Ponto Luz Gancho', 79.90, 'assets/prod_piercing_gancho.png')">
+            <button class="btn-quick-buy" onclick="window.buyProductDirect('Fattore Queratina Shampoo e Condicionador', 45.9, 'assets/produto2.jpg')">
               Adicionar à Sacola
             </button>
           </div>
         </article>
-
-        <!-- NOVO PRODUTO 4: Piercing Ponto Luz -->
+        <!-- PRODUTO 3 -->
         <article class="product-card-col">
           <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • ZIRCÔNIA</span>
-            <img src="assets/prod_piercing_luz.png" alt="Piercing Ponto Luz" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">PIERCING</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">PONTO LUZ</span>
+            <span class="product-gold-badge">ANTIQUEDA</span>
+            <img src="assets/produto3.jpg" alt="Kit Bio Extratus Antiqueda Jaborandi" loading="lazy">
           </div>
           <div class="product-info-box">
-            <h3 class="product-title-link">Piercing Ponto Luz</h3>
+            <h3 class="product-title-link">Kit Bio Extratus Antiqueda Jaborandi</h3>
             <div class="rating-stars-row">
               <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
+              <span><strong>5,0</strong></span>
             </div>
             <div class="price-container-box">
               <div class="price-main-row">
-                <span class="price-current-value">R$ 79,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
+                <span class="price-current-value">R$ 89,90</span>
               </div>
-              <span class="price-installments-text">ou 3x de R$ 26,63 sem juros</span>
             </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Piercing Ponto Luz', 79.90, 'assets/prod_piercing_luz.png')">
+            <button class="btn-quick-buy" onclick="window.buyProductDirect('Kit Bio Extratus Antiqueda Jaborandi', 89.9, 'assets/produto3.jpg')">
               Adicionar à Sacola
             </button>
           </div>
         </article>
-
-        <!-- NOVO PRODUTO 5: Piercing Ponto Luz Corrente -->
+        <!-- PRODUTO 4 -->
         <article class="product-card-col">
           <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • CORRENTE</span>
-            <img src="assets/prod_piercing_corrente.png" alt="Piercing Ponto Luz Corrente" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">PIERCING</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">LUZ COM CORRENTE</span>
+            <span class="product-gold-badge">NUTRIÇÃO</span>
+            <img src="assets/produto4.jpg" alt="Kit OX Nutrição Fortalecedora" loading="lazy">
           </div>
           <div class="product-info-box">
-            <h3 class="product-title-link">Piercing Ponto Luz Corrente</h3>
+            <h3 class="product-title-link">Kit OX Nutrição Fortalecedora</h3>
             <div class="rating-stars-row">
               <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
-            </div>
-            <div class="price-container-box">
-              <div class="price-main-row">
-                <span class="price-current-value">R$ 99,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
-              </div>
-              <span class="price-installments-text">ou 3x de R$ 33,30 sem juros</span>
-            </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Piercing Ponto Luz Corrente', 99.90, 'assets/prod_piercing_corrente.png')">
-              Adicionar à Sacola
-            </button>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       Section: ANÉIS
-       ========================================================================== -->
-  <section class="promotions-today-section" id="aneis" aria-label="Anéis em Prata 925" style="background: #F8FAFC;">
-    <div class="promotions-today-container">
-      <h2 class="section-title-h2">ANÉIS EM PRATA 925</h2>
-      <p style="text-align: center; font-family: var(--font-poppins); font-size: 13px; color: #64748B; margin: -16px 0 24px;">
-        O toque final de elegância para as suas mãos
-      </p>
-
-      <div class="products-grid-container">
-        
-        <!-- NOVO PRODUTO: Anel Dedinho Estrelas -->
-        <article class="product-card-col">
-          <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • ZIRCÔNIA</span>
-            <img src="assets/prod_anel_estrelas.png" alt="Anel Dedinho Estrelas" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">ANEL</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">DEDINHO ESTRELAS</span>
-          </div>
-          <div class="product-info-box">
-            <h3 class="product-title-link">Anel Dedinho Estrelas</h3>
-            <div class="rating-stars-row">
-              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
-            </div>
-            <div class="price-container-box">
-              <div class="price-main-row">
-                <span class="price-current-value">R$ 149,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
-              </div>
-              <span class="price-installments-text">ou 3x de R$ 49,96 sem juros</span>
-            </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Anel Dedinho Estrelas', 149.90, 'assets/prod_anel_estrelas.png')">
-              Adicionar à Sacola
-            </button>
-          </div>
-        </article>
-
-        <!-- NOVO PRODUTO: Anel Coração Lilás -->
-        <article class="product-card-col">
-          <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • ZIRCÔNIA</span>
-            <img src="assets/prod_anel_coracao_lilas.png" alt="Anel Coração Lilás" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">ANEL</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">CORAÇÃO LILÁS</span>
-          </div>
-          <div class="product-info-box">
-            <h3 class="product-title-link">Anel Coração Lilás</h3>
-            <div class="rating-stars-row">
-              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
-            </div>
-            <div class="price-container-box">
-              <div class="price-main-row">
-                <span class="price-current-value">R$ 139,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
-              </div>
-              <span class="price-installments-text">ou 3x de R$ 46,63 sem juros</span>
-            </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Anel Coração Lilás', 139.90, 'assets/prod_anel_coracao_lilas.png')">
-              Adicionar à Sacola
-            </button>
-          </div>
-        </article>
-
-        <!-- NOVO PRODUTO: Anel Trevo Cravejado -->
-        <article class="product-card-col">
-          <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • ZIRCÔNIA</span>
-            <img src="assets/prod_anel_trevo.png" alt="Anel Trevo Cravejado" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">ANEL</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">TREVO CRAVEJADO</span>
-          </div>
-          <div class="product-info-box">
-            <h3 class="product-title-link">Anel Trevo Cravejado</h3>
-            <div class="rating-stars-row">
-              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
-            </div>
-            <div class="price-container-box">
-              <div class="price-main-row">
-                <span class="price-current-value">R$ 119,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
-              </div>
-              <span class="price-installments-text">ou 3x de R$ 39,96 sem juros</span>
-            </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Anel Trevo Cravejado', 119.90, 'assets/prod_anel_trevo.png')">
-              Adicionar à Sacola
-            </button>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       Section: BERLOQUES E CHARMS
-       ========================================================================== -->
-  <section class="promotions-today-section" id="berloques" aria-label="Berloques e Charms em Prata 925">
-    <div class="promotions-today-container">
-      <h2 class="section-title-h2">BERLOQUES E CHARMS</h2>
-      <p style="text-align: center; font-family: var(--font-poppins); font-size: 13px; color: #64748B; margin: -16px 0 24px;">
-        Conte a sua história através da Prata 925
-      </p>
-
-      <div class="products-grid-container">
-        
-        <!-- NOVO PRODUTO: Pulseira Life Berloque -->
-        <article class="product-card-col">
-          <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • LIFE</span>
-            <img src="assets/prod_pulseira_life.png" alt="Pulseira Life Berloque" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">PULSEIRA LIFE</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">PARA BERLOQUES</span>
-          </div>
-          <div class="product-info-box">
-            <h3 class="product-title-link">Pulseira Life Berloque</h3>
-            <div class="rating-stars-row">
-              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
-            </div>
-            <div class="price-container-box">
-              <div class="price-main-row">
-                <span class="price-current-value">R$ 369,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
-              </div>
-              <span class="price-installments-text">ou 5x de R$ 73,98 sem juros</span>
-            </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Pulseira Life Berloque', 369.90, 'assets/prod_pulseira_life.png')">
-              Adicionar à Sacola
-            </button>
-          </div>
-        </article>
-
-        <!-- NOVO PRODUTO: Trava Pulseira Life Berloque -->
-        <article class="product-card-col">
-          <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • SEGURANÇA</span>
-            <img src="assets/prod_trava_life.png" alt="Trava Pulseira Life Berloque" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">TRAVA DE SEGURANÇA</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">PULSEIRA LIFE</span>
-          </div>
-          <div class="product-info-box">
-            <h3 class="product-title-link">Trava Pulseira Life Berloque</h3>
-            <div class="rating-stars-row">
-              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
-            </div>
-            <div class="price-container-box">
-              <div class="price-main-row">
-                <span class="price-current-value">R$ 119,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
-              </div>
-              <span class="price-installments-text">ou 3x de R$ 39,96 sem juros</span>
-            </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Trava Pulseira Life Berloque', 119.90, 'assets/prod_trava_life.png')">
-              Adicionar à Sacola
-            </button>
-          </div>
-        </article>
-        <!-- NOVO PRODUTO: Charm Chapéu Boiadeira -->
-        <article class="product-card-col">
-          <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • ZIRCÔNIA</span>
-            <img src="assets/prod_charm_boiadeira.png" alt="Charm Chapéu Boiadeira" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">CHARM / BERLOQUE</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">CHAPÉU BOIADEIRA</span>
-          </div>
-          <div class="product-info-box">
-            <h3 class="product-title-link">Charm Chapéu Boiadeira</h3>
-            <div class="rating-stars-row">
-              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
-            </div>
-            <div class="price-container-box">
-              <div class="price-main-row">
-                <span class="price-current-value">R$ 139,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
-              </div>
-              <span class="price-installments-text">ou 3x de R$ 46,63 sem juros</span>
-            </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Charm Chapéu Boiadeira', 139.90, 'assets/prod_charm_boiadeira.png')">
-              Adicionar à Sacola
-            </button>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       Section: BRINCO ARGOLAS
-       ========================================================================== -->
-  <section class="promotions-today-section" id="argolas" aria-label="Brinco Argolas em Prata 925" style="background: #F8FAFC;">
-    <div class="promotions-today-container">
-      <h2 class="section-title-h2">BRINCO ARGOLAS EM PRATA 925</h2>
-      <p style="text-align: center; font-family: var(--font-poppins); font-size: 13px; color: #64748B; margin: -16px 0 24px;">
-        Movimento e elegância para emoldurar o seu rosto
-      </p>
-
-      <div class="products-grid-container">
-        
-        <!-- NOVO PRODUTO: Argola Penduricalho Rosa Pink -->
-        <article class="product-card-col">
-          <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • ZIRCÔNIA</span>
-            <img src="assets/prod_argola_rosa.png" alt="Argola Penduricalho Rosa Pink" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">BRINCO ARGOLA</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">ROSA PINK</span>
-          </div>
-          <div class="product-info-box">
-            <h3 class="product-title-link">Argola Penduricalho Rosa Pink</h3>
-            <div class="rating-stars-row">
-              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
-            </div>
-            <div class="price-container-box">
-              <div class="price-main-row">
-                <span class="price-current-value">R$ 149,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
-              </div>
-              <span class="price-installments-text">ou 3x de R$ 49,96 sem juros</span>
-            </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Argola Penduricalho Rosa Pink', 149.90, 'assets/prod_argola_rosa.png')">
-              Adicionar à Sacola
-            </button>
-          </div>
-        </article>
-
-        <!-- NOVO PRODUTO: Argola Penduricalho Verde Esmeralda -->
-        <article class="product-card-col">
-          <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • ZIRCÔNIA</span>
-            <img src="assets/prod_argola_verde.png" alt="Argola Penduricalho Verde Esmeralda" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">BRINCO ARGOLA</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">VERDE ESMERALDA</span>
-          </div>
-          <div class="product-info-box">
-            <h3 class="product-title-link">Argola Penduricalho Verde Esmeralda</h3>
-            <div class="rating-stars-row">
-              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
-            </div>
-            <div class="price-container-box">
-              <div class="price-main-row">
-                <span class="price-current-value">R$ 149,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
-              </div>
-              <span class="price-installments-text">ou 3x de R$ 49,96 sem juros</span>
-            </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Argola Penduricalho Verde Esmeralda', 149.90, 'assets/prod_argola_verde.png')">
-              Adicionar à Sacola
-            </button>
-          </div>
-        </article>
-
-        <!-- NOVO PRODUTO: Argola Cruz Penduricalho -->
-        <article class="product-card-col">
-          <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • ZIRCÔNIA</span>
-            <img src="assets/prod_argola_cruz.png" alt="Argola Cruz Penduricalho" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">BRINCO ARGOLA</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">CRUZ CRAVEJADA</span>
-          </div>
-          <div class="product-info-box">
-            <h3 class="product-title-link">Argola Cruz Penduricalho</h3>
-            <div class="rating-stars-row">
-              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
-            </div>
-            <div class="price-container-box">
-              <div class="price-main-row">
-                <span class="price-current-value">R$ 199,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
-              </div>
-              <span class="price-installments-text">ou 6x de R$ 33,31 sem juros</span>
-            </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Argola Cruz Penduricalho', 199.90, 'assets/prod_argola_cruz.png')">
-              Adicionar à Sacola
-            </button>
-          </div>
-        </article>
-
-      </div>
-    </div>
-  </section>
-
-  <!-- ==========================================================================
-       Section: BRINCOS TARRACHAS
-       ========================================================================== -->
-  <section class="promotions-today-section" id="tarrachas" aria-label="Brincos Tarrachas em Prata 925">
-    <div class="promotions-today-container">
-      <h2 class="section-title-h2">BRINCOS DE TARRAXA</h2>
-      <p style="text-align: center; font-family: var(--font-poppins); font-size: 13px; color: #64748B; margin: -16px 0 24px;">
-        Pontos de luz clássicos para iluminar o seu visual
-      </p>
-
-      <div class="products-grid-container">
-        
-        <!-- NOVO PRODUTO: Brinco Ponto Luz Rosa Pink -->
-        <article class="product-card-col">
-          <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • ZIRCÔNIA</span>
-            <img src="assets/prod_brinco_ponto_rosa.png" alt="Brinco Ponto Luz Rosa Pink" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">BRINCO TARRAXA</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">ROSA PINK</span>
-          </div>
-          <div class="product-info-box">
-            <h3 class="product-title-link">Brinco Ponto Luz Rosa Pink</h3>
-            <div class="rating-stars-row">
-              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
-            </div>
-            <div class="price-container-box">
-              <div class="price-main-row">
-                <span class="price-current-value">R$ 129,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
-              </div>
-              <span class="price-installments-text">ou 3x de R$ 43,30 sem juros</span>
-            </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Brinco Ponto Luz Rosa Pink', 129.90, 'assets/prod_brinco_ponto_rosa.png')">
-              Adicionar à Sacola
-            </button>
-          </div>
-        </article>
-
-        <!-- NOVO PRODUTO: Brinco Lua -->
-        <article class="product-card-col">
-          <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • DELICADO</span>
-            <img src="assets/prod_brinco_lua.png" alt="Brinco Lua" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">BRINCO TARRAXA</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">LUA MINGUANTE</span>
-          </div>
-          <div class="product-info-box">
-            <h3 class="product-title-link">Brinco Lua</h3>
-            <div class="rating-stars-row">
-              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
-            </div>
-            <div class="price-container-box">
-              <div class="price-main-row">
-                <span class="price-current-value">R$ 34,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
-              </div>
-              <span class="price-installments-text">ou 2x de R$ 17,45 sem juros</span>
-            </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Brinco Lua', 34.90, 'assets/prod_brinco_lua.png')">
-              Adicionar à Sacola
-            </button>
-          </div>
-        </article>
-
-        <!-- NOVO PRODUTO: Brinco Lacinho -->
-        <article class="product-card-col">
-          <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • DELICADO</span>
-            <img src="assets/prod_brinco_lacinho.png" alt="Brinco Lacinho" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">BRINCO TARRAXA</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">LACINHO</span>
-          </div>
-          <div class="product-info-box">
-            <h3 class="product-title-link">Brinco Lacinho</h3>
-            <div class="rating-stars-row">
-              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
+              <span><strong>5,0</strong></span>
             </div>
             <div class="price-container-box">
               <div class="price-main-row">
                 <span class="price-current-value">R$ 39,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
               </div>
-              <span class="price-installments-text">ou 2x de R$ 19,95 sem juros</span>
             </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Brinco Lacinho', 39.90, 'assets/prod_brinco_lacinho.png')">
+            <button class="btn-quick-buy" onclick="window.buyProductDirect('Kit OX Nutrição Fortalecedora', 39.9, 'assets/produto4.jpg')">
               Adicionar à Sacola
             </button>
           </div>
         </article>
-
-      </div>
+        <!-- PRODUTO 5 -->
+        <article class="product-card-col">
+          <div class="product-image-box">
+            <span class="product-gold-badge">HIDRATAÇÃO</span>
+            <img src="assets/produto5.jpg" alt="Kit Neutrox Clássico" loading="lazy">
+          </div>
+          <div class="product-info-box">
+            <h3 class="product-title-link">Kit Neutrox Clássico</h3>
+            <div class="rating-stars-row">
+              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
+              <span><strong>5,0</strong></span>
+            </div>
+            <div class="price-container-box">
+              <div class="price-main-row">
+                <span class="price-current-value">R$ 29,90</span>
+              </div>
+            </div>
+            <button class="btn-quick-buy" onclick="window.buyProductDirect('Kit Neutrox Clássico', 29.9, 'assets/produto5.jpg')">
+              Adicionar à Sacola
+            </button>
+          </div>
+        </article>
+        <!-- PRODUTO 6 -->
+        <article class="product-card-col">
+          <div class="product-image-box">
+            <span class="product-gold-badge">QUÍMICOS</span>
+            <img src="assets/produto6.jpg" alt="Fattore Cabelos Químicos" loading="lazy">
+          </div>
+          <div class="product-info-box">
+            <h3 class="product-title-link">Fattore Cabelos Químicos</h3>
+            <div class="rating-stars-row">
+              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
+              <span><strong>5,0</strong></span>
+            </div>
+            <div class="price-container-box">
+              <div class="price-main-row">
+                <span class="price-current-value">R$ 49,90</span>
+              </div>
+            </div>
+            <button class="btn-quick-buy" onclick="window.buyProductDirect('Fattore Cabelos Químicos', 49.9, 'assets/produto6.jpg')">
+              Adicionar à Sacola
+            </button>
+          </div>
+        </article>
+        <!-- PRODUTO 7 -->
+        <article class="product-card-col">
+          <div class="product-image-box">
+            <span class="product-gold-badge">CACHOS</span>
+            <img src="assets/produto7.jpg" alt="Creme para Pentear Salon Line" loading="lazy">
+          </div>
+          <div class="product-info-box">
+            <h3 class="product-title-link">Creme para Pentear Salon Line</h3>
+            <div class="rating-stars-row">
+              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
+              <span><strong>5,0</strong></span>
+            </div>
+            <div class="price-container-box">
+              <div class="price-main-row">
+                <span class="price-current-value">R$ 34,90</span>
+              </div>
+            </div>
+            <button class="btn-quick-buy" onclick="window.buyProductDirect('Creme para Pentear Salon Line', 34.9, 'assets/produto7.jpg')">
+              Adicionar à Sacola
+            </button>
+          </div>
+        </article>
+        <!-- PRODUTO 12 -->
+        <article class="product-card-col">
+          <div class="product-image-box">
+            <span class="product-gold-badge">ACESSÓRIOS</span>
+            <img src="assets/produto12.jpg" alt="Escovas de Cabelo Estampadas" loading="lazy">
+          </div>
+          <div class="product-info-box">
+            <h3 class="product-title-link">Escovas de Cabelo Estampadas</h3>
+            <div class="rating-stars-row">
+              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
+              <span><strong>5,0</strong></span>
+            </div>
+            <div class="price-container-box">
+              <div class="price-main-row">
+                <span class="price-current-value">R$ 19,90</span>
+              </div>
+            </div>
+            <button class="btn-quick-buy" onclick="window.buyProductDirect('Escovas de Cabelo Estampadas', 19.9, 'assets/produto12.jpg')">
+              Adicionar à Sacola
+            </button>
+          </div>
+        </article>
+        </div>
+      <div class="scroll-dots"></div>
     </div>
   </section>
 
   <!-- ==========================================================================
-       Section: CONJUNTOS
+       Section: MAQUIAGEM
        ========================================================================== -->
-  <section class="promotions-today-section" id="conjunto" aria-label="Conjuntos em Prata 925" style="background: #FFFFFF;">
+  <section class="promotions-today-section" id="maquiagem" aria-label="Produtos MAQUIAGEM" style="background: #F8FAFC;">
     <div class="promotions-today-container">
-      <h2 class="section-title-h2">CONJUNTOS EM PRATA 925</h2>
+      <h2 class="section-title-h2">MAQUIAGEM</h2>
       <p style="text-align: center; font-family: var(--font-poppins); font-size: 13px; color: #64748B; margin: -16px 0 24px;">
-        A harmonia perfeita entre colar e brincos
+        Os melhores produtos da categoria MAQUIAGEM
       </p>
-
-      <div class="products-grid-container">
-        
-        <!-- NOVO PRODUTO: Conjunto Cristal -->
+      <div class="products-grid-container scroll-container">
+        <!-- PRODUTO 10 -->
         <article class="product-card-col">
           <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • ZIRCÔNIA</span>
-            <img src="assets/prod_conjunto_cristal.png" alt="Conjunto Cristal" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">CONJUNTO</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">CRISTAL TRANSPARENTE</span>
+            <span class="product-gold-badge">INFANTIL</span>
+            <img src="assets/produto10.jpg" alt="Kit Maquiagem Infantil + Esponjas" loading="lazy">
           </div>
           <div class="product-info-box">
-            <h3 class="product-title-link">Conjunto Cristal</h3>
+            <h3 class="product-title-link">Kit Maquiagem Infantil + Esponjas</h3>
             <div class="rating-stars-row">
               <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
+              <span><strong>5,0</strong></span>
             </div>
             <div class="price-container-box">
               <div class="price-main-row">
-                <span class="price-current-value">R$ 149,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
+                <span class="price-current-value">R$ 29,90</span>
               </div>
-              <span class="price-installments-text">ou 3x de R$ 49,96 sem juros</span>
             </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Conjunto Cristal', 149.90, 'assets/prod_conjunto_cristal.png')">
+            <button class="btn-quick-buy" onclick="window.buyProductDirect('Kit Maquiagem Infantil + Esponjas', 29.9, 'assets/produto10.jpg')">
               Adicionar à Sacola
             </button>
           </div>
         </article>
-
-        <!-- NOVO PRODUTO: Conjunto Ponto Luz Gota -->
+        <!-- PRODUTO 14 -->
         <article class="product-card-col">
           <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • ZIRCÔNIA</span>
-            <img src="assets/prod_conjunto_gota.png" alt="Conjunto Ponto Luz Gota" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">CONJUNTO</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">GOTA DE LUZ</span>
+            <span class="product-gold-badge">PELE</span>
+            <img src="assets/produto14.jpg" alt="Base Matte Hidraluronic Tracta" loading="lazy">
           </div>
           <div class="product-info-box">
-            <h3 class="product-title-link">Conjunto Ponto Luz Gota</h3>
+            <h3 class="product-title-link">Base Matte Hidraluronic Tracta</h3>
             <div class="rating-stars-row">
               <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
+              <span><strong>5,0</strong></span>
             </div>
             <div class="price-container-box">
               <div class="price-main-row">
-                <span class="price-current-value">R$ 149,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
+                <span class="price-current-value">R$ 35,90</span>
               </div>
-              <span class="price-installments-text">ou 3x de R$ 49,96 sem juros</span>
             </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Conjunto Ponto Luz Gota', 149.90, 'assets/prod_conjunto_gota.png')">
+            <button class="btn-quick-buy" onclick="window.buyProductDirect('Base Matte Hidraluronic Tracta', 35.9, 'assets/produto14.jpg')">
               Adicionar à Sacola
             </button>
           </div>
         </article>
-
-        <!-- NOVO PRODUTO: Conjunto Rosa Bebê -->
+        <!-- PRODUTO 15 -->
         <article class="product-card-col">
           <div class="product-image-box">
-            <span class="product-gold-badge">PRATA 925 • ZIRCÔNIA</span>
-            <img src="assets/prod_conjunto_rosa_bebe.png" alt="Conjunto Rosa Bebê" loading="lazy">
-          </div>
-          <div class="promo-countdown-badge">
-            <span class="timer-val" style="font-size: 11px;">CONJUNTO</span>
-            <span class="timer-sep">|</span>
-            <span class="timer-val" style="font-size: 11px; color: #FFFFFF;">ROSA BEBÊ</span>
+            <span class="product-gold-badge">OLHOS</span>
+            <img src="assets/produto15.jpg" alt="Máscara de Cílios MaHav" loading="lazy">
           </div>
           <div class="product-info-box">
-            <h3 class="product-title-link">Conjunto Rosa Bebê</h3>
+            <h3 class="product-title-link">Máscara de Cílios MaHav</h3>
             <div class="rating-stars-row">
               <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
-              <span class="rating-count-text">5.0 (65 no Google)</span>
+              <span><strong>5,0</strong></span>
             </div>
             <div class="price-container-box">
               <div class="price-main-row">
-                <span class="price-current-value">R$ 149,90</span>
-                <span class="price-discount-tag">PRATA 925</span>
+                <span class="price-current-value">R$ 22,90</span>
               </div>
-              <span class="price-installments-text">ou 3x de R$ 49,96 sem juros</span>
             </div>
-            <button class="btn-quick-buy" onclick="window.buyJewelryDirect('Conjunto Rosa Bebê', 149.90, 'assets/prod_conjunto_rosa_bebe.png')">
+            <button class="btn-quick-buy" onclick="window.buyProductDirect('Máscara de Cílios MaHav', 22.9, 'assets/produto15.jpg')">
               Adicionar à Sacola
             </button>
           </div>
         </article>
-
-      </div>
+        <!-- PRODUTO 16 -->
+        <article class="product-card-col">
+          <div class="product-image-box">
+            <span class="product-gold-badge">LÁBIOS</span>
+            <img src="assets/produto16.jpg" alt="Batom Hidratante FPS 15 Tracta" loading="lazy">
+          </div>
+          <div class="product-info-box">
+            <h3 class="product-title-link">Batom Hidratante FPS 15 Tracta</h3>
+            <div class="rating-stars-row">
+              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
+              <span><strong>5,0</strong></span>
+            </div>
+            <div class="price-container-box">
+              <div class="price-main-row">
+                <span class="price-current-value">R$ 18,90</span>
+              </div>
+            </div>
+            <button class="btn-quick-buy" onclick="window.buyProductDirect('Batom Hidratante FPS 15 Tracta', 18.9, 'assets/produto16.jpg')">
+              Adicionar à Sacola
+            </button>
+          </div>
+        </article>
+        <!-- PRODUTO 17 -->
+        <article class="product-card-col">
+          <div class="product-image-box">
+            <span class="product-gold-badge">PELE</span>
+            <img src="assets/produto17.jpg" alt="Blush Ruby Rose / MaHav" loading="lazy">
+          </div>
+          <div class="product-info-box">
+            <h3 class="product-title-link">Blush Ruby Rose / MaHav</h3>
+            <div class="rating-stars-row">
+              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
+              <span><strong>5,0</strong></span>
+            </div>
+            <div class="price-container-box">
+              <div class="price-main-row">
+                <span class="price-current-value">R$ 14,90</span>
+              </div>
+            </div>
+            <button class="btn-quick-buy" onclick="window.buyProductDirect('Blush Ruby Rose / MaHav', 14.9, 'assets/produto17.jpg')">
+              Adicionar à Sacola
+            </button>
+          </div>
+        </article>
+        </div>
+      <div class="scroll-dots"></div>
     </div>
   </section>
 
   <!-- ==========================================================================
-       Section: Manifesto da Marca - Prata 925 Autêntica
+       Section: UNHAS
        ========================================================================== -->
-  <section class="brand-manifesto-section" aria-label="Manifesto Prata 925 Legítima">
-    <div class="brand-manifesto-content">
-      <span style="font-family: var(--font-poppins); font-size: 11px; font-weight: 700; color: #CBD5E1; letter-spacing: 2px; text-transform: uppercase;">
-        POR MELISSA BRUNELLI
-      </span>
-      <h2 class="manifesto-heading-h2">PRATA LEGÍTIMA 925 QUE DURA PARA SEMPRE</h2>
-      <p class="manifesto-paragraph-text">
-        Na Brunelli Joias, não trabalhamos com folheados ou bijuterias. Todas as nossas peças são fundidas em 
-        <strong>Prata Legítima 925</strong>, com acabamento espelhado, hipoalergênicas e com certificado de autenticidade vitalícia do metal nobre. 
-        Acessórios atemporais criados para quem é verdadeiramente apaixonado por prata.
+  <section class="promotions-today-section" id="unhas" aria-label="Produtos UNHAS" style="background: #F8FAFC;">
+    <div class="promotions-today-container">
+      <h2 class="section-title-h2">UNHAS</h2>
+      <p style="text-align: center; font-family: var(--font-poppins); font-size: 13px; color: #64748B; margin: -16px 0 24px;">
+        Os melhores produtos da categoria UNHAS
       </p>
-      <a href="https://wa.me/5531987029034?text=Ol%C3%A1%20Mel!%20Quero%20conhecer%20as%20pe%C3%A7as%20em%20Prata%20925" class="btn-manifesto-action">
-        FALAR COM A MEL NO WHATSAPP
-      </a>
+      <div class="products-grid-container scroll-container">
+        <!-- PRODUTO 11 -->
+        <article class="product-card-col">
+          <div class="product-image-box">
+            <span class="product-gold-badge">ACESSÓRIOS</span>
+            <img src="assets/produto11.jpg" alt="Kit Unhas Postiças, Adesivos e Pincéis" loading="lazy">
+          </div>
+          <div class="product-info-box">
+            <h3 class="product-title-link">Kit Unhas Postiças, Adesivos e Pincéis</h3>
+            <div class="rating-stars-row">
+              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
+              <span><strong>5,0</strong></span>
+            </div>
+            <div class="price-container-box">
+              <div class="price-main-row">
+                <span class="price-current-value">R$ 25,90</span>
+              </div>
+            </div>
+            <button class="btn-quick-buy" onclick="window.buyProductDirect('Kit Unhas Postiças, Adesivos e Pincéis', 25.9, 'assets/produto11.jpg')">
+              Adicionar à Sacola
+            </button>
+          </div>
+        </article>
+        </div>
+      <div class="scroll-dots"></div>
     </div>
   </section>
 
   <!-- ==========================================================================
-       Section: Avaliações Reais do Google Maps (Nota 5,0 ⭐ com 65 avaliações)
+       Section: ACESSÓRIOS
        ========================================================================== -->
-  <section class="google-reviews-section" id="avaliacoes" aria-label="Avaliações de Clientes no Google">
-    <div class="google-reviews-container">
-      
-      <div class="google-header-card">
-        <div class="google-brand-row">
-          <svg width="24" height="24" viewBox="0 0 24 24">
-            <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.66-5.17 3.66-9.17z"/>
-            <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
-            <path fill="#FBBC05" d="M5.28 14.27A7.17 7.17 0 0 1 4.9 12c0-.79.14-1.57.38-2.27V6.58H1.25A11.97 11.97 0 0 0 0 12c0 1.92.45 3.74 1.25 5.42l4.03-3.15z"/>
-            <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
-          </svg>
-          <span style="font-family: var(--font-poppins); font-size: 14px; font-weight: 700; color: #475569; letter-spacing: 0.5px;">AVALIAÇÕES NO GOOGLE MAPS</span>
-        </div>
-        <div class="google-score-num">5,0</div>
-        <div style="color: #F59E0B; font-size: 20px; margin: 4px 0;">★★★★★</div>
-        <p class="google-total-reviews">Excelente • <strong>65 avaliações</strong> verificadas</p>
-      </div>
-
-      <!-- Grid com os Depoimentos Reais do Perfil Google Maps -->
-      <div class="reviews-grid-3cols">
-        
-        <!-- Depoimento 1: Jéssica Lopes -->
-        <div class="review-card-item">
-          <div class="review-author-row">
-            <div class="review-avatar-circle">JL</div>
-            <div class="review-author-info">
-              <h4>Jéssica Lopes</h4>
-              <span class="review-time-tag">5 avaliações • 5 fotos</span>
-            </div>
+  <section class="promotions-today-section" id="acessorios" aria-label="Produtos ACESSÓRIOS" style="background: #F8FAFC;">
+    <div class="promotions-today-container">
+      <h2 class="section-title-h2">ACESSÓRIOS</h2>
+      <p style="text-align: center; font-family: var(--font-poppins); font-size: 13px; color: #64748B; margin: -16px 0 24px;">
+        Os melhores produtos da categoria ACESSÓRIOS
+      </p>
+      <div class="products-grid-container scroll-container">
+        <!-- PRODUTO 8 -->
+        <article class="product-card-col">
+          <div class="product-image-box">
+            <span class="product-gold-badge">ACESSÓRIOS</span>
+            <img src="assets/produto8.jpg" alt="Conjunto Brincos de Argola Prateados" loading="lazy">
           </div>
-          <div style="color: #F59E0B; font-size: 14px;">★★★★★</div>
-          <p class="review-text-p">
-            "Eu sou simplesmente apaixonada com tudo da loja rs. Todos os meus acessórios eu pego na Brunelli 😍 Produtos da melhor qualidade!"
-          </p>
-        </div>
-
-        <!-- Depoimento 2: Geovana Fernandes -->
-        <div class="review-card-item">
-          <div class="review-author-row">
-            <div class="review-avatar-circle" style="background: #E1306C;">GF</div>
-            <div class="review-author-info">
-              <h4>Geovana Fernandes</h4>
-              <span class="review-time-tag">3 avaliações • 1 foto</span>
+          <div class="product-info-box">
+            <h3 class="product-title-link">Conjunto Brincos de Argola Prateados</h3>
+            <div class="rating-stars-row">
+              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
+              <span><strong>5,0</strong></span>
             </div>
-          </div>
-          <div style="color: #F59E0B; font-size: 14px;">★★★★★</div>
-          <p class="review-text-p">
-            "Minha primeira compra e com certeza irei comprar mais vezes!! 🥰🥰 Amei muitoo, super educada e tem um ótimo atendimento."
-          </p>
-        </div>
-
-        <!-- Depoimento 3: Jéssica Nunes -->
-        <div class="review-card-item">
-          <div class="review-author-row">
-            <div class="review-avatar-circle" style="background: #0284C7;">JN</div>
-            <div class="review-author-info">
-              <h4>Jéssica Nunes</h4>
-              <span class="review-time-tag">Cliente há 3 anos • 2 fotos</span>
+            <div class="price-container-box">
+              <div class="price-main-row">
+                <span class="price-current-value">R$ 15,90</span>
+              </div>
             </div>
+            <button class="btn-quick-buy" onclick="window.buyProductDirect('Conjunto Brincos de Argola Prateados', 15.9, 'assets/produto8.jpg')">
+              Adicionar à Sacola
+            </button>
           </div>
-          <div style="color: #F59E0B; font-size: 14px;">★★★★★</div>
-          <p class="review-text-p">
-            "Totalmente apaixonada pelas minhas peças!! Já sou cliente a 3 anos ♥️ A Mel atende super bem e dá ótimas dicas sobre os cuidados e combinações."
-          </p>
+        </article>
+        <!-- PRODUTO 9 -->
+        <article class="product-card-col">
+          <div class="product-image-box">
+            <span class="product-gold-badge">ACESSÓRIOS</span>
+            <img src="assets/produto9.jpg" alt="Cartela de Brincos Strass e Pérolas" loading="lazy">
+          </div>
+          <div class="product-info-box">
+            <h3 class="product-title-link">Cartela de Brincos Strass e Pérolas</h3>
+            <div class="rating-stars-row">
+              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
+              <span><strong>5,0</strong></span>
+            </div>
+            <div class="price-container-box">
+              <div class="price-main-row">
+                <span class="price-current-value">R$ 12,90</span>
+              </div>
+            </div>
+            <button class="btn-quick-buy" onclick="window.buyProductDirect('Cartela de Brincos Strass e Pérolas', 12.9, 'assets/produto9.jpg')">
+              Adicionar à Sacola
+            </button>
+          </div>
+        </article>
+        <!-- PRODUTO 13 -->
+        <article class="product-card-col">
+          <div class="product-image-box">
+            <span class="product-gold-badge">CABELO</span>
+            <img src="assets/produto13.jpg" alt="Kit Piranhas, Elásticos e Lacinhos" loading="lazy">
+          </div>
+          <div class="product-info-box">
+            <h3 class="product-title-link">Kit Piranhas, Elásticos e Lacinhos</h3>
+            <div class="rating-stars-row">
+              <span style="color: #F59E0B; font-size: 12px;">★★★★★</span>
+              <span><strong>5,0</strong></span>
+            </div>
+            <div class="price-container-box">
+              <div class="price-main-row">
+                <span class="price-current-value">R$ 22,90</span>
+              </div>
+            </div>
+            <button class="btn-quick-buy" onclick="window.buyProductDirect('Kit Piranhas, Elásticos e Lacinhos', 22.9, 'assets/produto13.jpg')">
+              Adicionar à Sacola
+            </button>
+          </div>
+        </article>
         </div>
-
-      </div>
-
+      <div class="scroll-dots"></div>
     </div>
   </section>
 
-  <!-- ==========================================================================
-       Section: Loja Física - Box 111 Feirinha do Paraguai Eldorado (Contagem/MG)
-       ========================================================================== -->
-  <section class="store-physical-section" id="loja-fisica" aria-label="Loja Física Brunelli Joias">
-    <div class="store-physical-container">
+
+  <!-- Formas de pagamento -->
+  <section class="payment-section" style="padding: 40px 0; background: #fff; text-align: center;">
       
-      <div class="store-info-box">
-        <span class="store-badge-tag">📍 VENHA NOS VISITAR</span>
-        <h2 class="store-main-title">Brunelli Joias em Prata 925</h2>
-        
-        <div class="store-details-list">
-          <div class="store-detail-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
-              <circle cx="12" cy="10" r="3"></circle>
-            </svg>
-            <div>
-              <strong>Endereço:</strong><br>
-              Rua Portugal, 525 - Box 111 - Eldorado, Contagem - MG, CEP 30340-010<br>
-              <span style="color: #64748B;">Localizado em: Feirinha do Paraguai - Eldorado (Plus Code: 3X63+HJ Eldorado)</span>
-            </div>
-          </div>
-
-          <div class="store-detail-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
-            </svg>
-            <div>
-              <strong>WhatsApp &amp; Telefone:</strong><br>
-              <a href="https://wa.me/5531987029034" style="color: #0F172A; font-weight: 600;">(31) 98702-9034</a>
-            </div>
-          </div>
-
-          <div class="store-detail-item">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
-            <div>
-              <strong>Instagram Oficial:</strong><br>
-              <a href="https://www.instagram.com/brunellipratas/" target="_blank" style="color: #E1306C; font-weight: 600;">@brunellipratas</a> • Designer: <strong>@mrlissabrunelli</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="store-action-buttons">
-          <a href="https://maps.google.com/?q=Rua+Portugal+525+box+111+Eldorado+Contagem+MG+30340-010" target="_blank" class="btn-store-maps">
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <polygon points="3 11 22 2 13 21 11 13 3 11"></polygon>
-            </svg>
-            Rotas no Google Maps
-          </a>
-
-          <a href="https://wa.me/5531987029034?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20as%20pe%C3%A7as%20da%20Brunelli%20Pratas" class="btn-store-wpp">
-            Chamar no WhatsApp
-          </a>
-
-          <a href="https://www.instagram.com/brunellipratas/" target="_blank" class="btn-store-insta">
-            Instagram @brunellipratas
-          </a>
-        </div>
-      </div>
-
-      <!-- Horários de Funcionamento da Loja Física -->
-      <div class="store-hours-card">
-        <h4>
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-            <circle cx="12" cy="12" r="10"></circle>
-            <polyline points="12 6 12 12 16 14"></polyline>
-          </svg>
-          Horários de Atendimento (Box 111)
-        </h4>
-
-        <table class="hours-table">
-          <tbody>
-            <tr>
-              <td>Segunda-feira</td>
-              <td>10:00 – 18:00</td>
-            </tr>
-            <tr class="today">
-              <td>Terça-feira</td>
-              <td>10:00 – 18:00 (Aberto Hoje)</td>
-            </tr>
-            <tr>
-              <td>Quarta-feira</td>
-              <td>10:00 – 18:00</td>
-            </tr>
-            <tr>
-              <td>Quinta-feira</td>
-              <td>10:00 – 18:00</td>
-            </tr>
-            <tr>
-              <td>Sexta-feira</td>
-              <td>10:00 – 18:00</td>
-            </tr>
-            <tr>
-              <td>Sábado</td>
-              <td>10:00 – 18:00</td>
-            </tr>
-            <tr style="color: #94A3B8;">
-              <td>Domingo</td>
-              <td>Fechado</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-
-    </div>
+      <img src="assets/pagamento.png" alt="Formas de Pagamento" style="max-width: 100%; height: auto; border-radius: 8px;">
   </section>
 
-  <!-- ==========================================================================
+<!-- ==========================================================================
        Footer (Sem Newsletter, Sem Conta, 100% Responsivo)
        ========================================================================== -->
   <footer class="footer-main-wrapper" id="contato">
@@ -1375,12 +690,12 @@
       <!-- Column 1: A LOJA -->
       <div class="footer-nav-col">
         <div style="margin-bottom: 14px;">
-          <img src="assets/logo_brunelli_pratas.png" alt="Brunelli Joias em Prata 925" style="height: 48px; width: auto; background-color: #fff; padding: 5px; border-radius: 4px;">
+          <img src="assets/logo_perfumaria.png" alt="Perfumaria Paris em Beleza e Cosméticos" style="height: 48px; width: auto; background-color: #fff; padding: 5px; border-radius: 4px;">
         </div>
         <p style="font-family: var(--font-poppins); font-size: 12.5px; color: #94A3B8; line-height: 1.6; margin-bottom: 12px;">
-          Jóias em prata legítima 925.<br>
+          Jóias em Beleza e Cosméticos.<br>
           Apaixonada por Prata como você.<br>
-          Peças exclusivas por <strong style="color: #E2E8F0;">@mrlissabrunelli</strong>.
+          Peças exclusivas por <strong style="color: #E2E8F0;">@perfumariaparis_oficial</strong>.
         </p>
         <p style="font-family: var(--font-poppins); font-size: 12px; color: #94A3B8;">
           📍 Eldorado - Rua Portugal, 525 - Box 111<br>
@@ -1388,14 +703,14 @@
         </p>
       </div>
 
-      <!-- Column 2: CATEGORIAS EM PRATA 925 -->
+      <!-- Column 2: CATEGORIAS EM Beleza e Cosméticos -->
       <div class="footer-nav-col">
         <h4 class="footer-col-title">CATEGORIAS DE JOIAS</h4>
         <ul class="footer-links-list">
           <li><a href="#masculino" class="footer-link-anchor">Correntes e Joias Masculinas</a></li>
           <li><a href="#pulseira-feminina" class="footer-link-anchor">Pulseiras Femininas em Prata</a></li>
           <li><a href="#categorias" class="footer-link-anchor">Piercings e Berloques/Charms</a></li>
-          <li><a href="#categorias" class="footer-link-anchor">Anéis e Solitários em Prata 925</a></li>
+          <li><a href="#categorias" class="footer-link-anchor">Anéis e Solitários em Beleza e Cosméticos</a></li>
           <li><a href="#categorias" class="footer-link-anchor">Brincos Argolas e Tarrachas</a></li>
           <li><a href="#categorias" class="footer-link-anchor">Conjuntos e Linha Rivieras</a></li>
         </ul>
@@ -1406,18 +721,18 @@
         <h4 class="footer-col-title">ATENDIMENTO VIP</h4>
         <ul class="footer-links-list">
           <li>
-            <a href="https://wa.me/5531987029034" class="footer-link-anchor" style="color: #059669; font-weight: 600;">
-              📱 WhatsApp: (31) 98702-9034
+            <a href="https://wa.me/5585992029639" class="footer-link-anchor" style="color: #059669; font-weight: 600;">
+              📱 WhatsApp: (85) 99202-9639
             </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/brunellipratas/" class="footer-link-anchor" style="color: #E1306C; font-weight: 600;">
-              📸 Instagram: @brunellipratas
+            <a href="https://www.instagram.com/perfumariaparis_oficial/" class="footer-link-anchor" style="color: #E1306C; font-weight: 600;">
+              📸 Instagram: @perfumariaparis_oficial
             </a>
           </li>
           <li><span class="footer-link-anchor" style="opacity: 0.8;">⏰ Seg a Sáb: 10:00 às 18:00</span></li>
           <li><span class="footer-link-anchor" style="opacity: 0.8;">📍 Box 111 - Feirinha Eldorado</span></li>
-          <li><span class="footer-link-anchor" style="color: #F59E0B; font-weight: 600;">⭐ 5,0 no Google Maps (65 avaliações)</span></li>
+          <li><span class="footer-link-anchor" style="color: #F59E0B; font-weight: 600;">⭐ 5,0 no Google Maps </span></li>
         </ul>
       </div>
     </div>
@@ -1450,10 +765,10 @@
     <div class="footer-copyright-bar">
       <div class="copyright-inner-container">
         <p class="copyright-text-p">
-          Copyright © Brunelli Joias em Prata 925 • Rua Portugal, 525 - Box 111 - Eldorado, Contagem - MG. Todos os direitos reservados.
+          Copyright © Perfumaria Paris em Beleza e Cosméticos • Rua Portugal, 525 - Box 111 - Eldorado, Contagem - MG. Todos os direitos reservados.
         </p>
         <p class="copyright-text-p" style="opacity: 0.8;">
-          Prata Legítima 925 com Certificado Permanente • Designer: @mrlissabrunelli
+          Beleza e Cosméticos com Certificado Permanente • Designer: @perfumariaparis_oficial
         </p>
       </div>
     </div>
@@ -1470,7 +785,7 @@
       <h2>O que você procura?</h2>
       <form onsubmit="event.preventDefault(); window.executeSearch();">
         <div class="search-input-group">
-          <input type="text" id="custom-search-input" placeholder="Buscar correntes, pulseiras, anéis em Prata 925..." autocomplete="off">
+          <input type="text" id="custom-search-input" placeholder="Buscar correntes, pulseiras, anéis em Beleza e Cosméticos..." autocomplete="off">
           <button type="submit" aria-label="Buscar">
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
           </button>
@@ -1480,10 +795,10 @@
   </div>
 
   <!-- ==========================================================================
-       Interactive Cart Drawer (Sacola de Joias em Prata 925)
+       Interactive Cart Drawer (Sacola de Joias em Beleza e Cosméticos)
        ========================================================================== -->
   <div class="cart-drawer-overlay" id="cart-drawer-overlay" onclick="window.closeCartDrawer()"></div>
-  <aside class="cart-drawer-panel" id="cart-drawer-panel" aria-label="Sacola de Joias em Prata 925">
+  <aside class="cart-drawer-panel" id="cart-drawer-panel" aria-label="Sacola de Joias em Beleza e Cosméticos">
     <div class="cart-drawer-header">
       <h3 class="cart-drawer-title">Sua Sacola (<span id="cart-drawer-count">0</span>)</h3>
       <button class="btn-close-drawer" onclick="window.closeCartDrawer()" aria-label="Fechar Sacola">&times;</button>
@@ -1500,7 +815,7 @@
     <!-- Items list -->
     <div class="cart-items-list-box" id="cart-items-container">
       <div class="cart-empty-message">
-        Sua sacola de joias está vazia.<br>Descubra peças exclusivas em <strong>Prata Legítima 925</strong>!
+        Sua sacola de joias está vazia.<br>Descubra peças exclusivas em <strong>Beleza e Cosméticos</strong>!
       </div>
     </div>
 
